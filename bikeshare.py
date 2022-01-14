@@ -239,8 +239,8 @@ def view_data(df):
     end_loc = 5
     while view_data.lower() != "no":
         print(df[start_loc:end_loc])
-        start_loc += 5
-        end_loc += 5
+        start_loc = start_loc + 5
+        end_loc = end_loc + 5
         view_data = input("Do you wish to continue?: ").lower()
 
 
