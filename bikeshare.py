@@ -24,7 +24,7 @@ def get_filters():
     while True:
         city = input("Please enter a city you want to analyse?\n").lower().strip()
         if city not in city_list:
-            print("invalid input; try again")
+            print("Bad input; try again")
         else:
             break
     months = ["january", "february", "march", "april", "may", "june", "all"]
@@ -33,7 +33,7 @@ def get_filters():
     while True:
         month = input("Please enter a month to filter by:\n").lower().strip()
         if month not in months:
-            print("Invalid input; try again")
+            print("Bad input; try again")
         else:
             break
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
@@ -50,7 +50,7 @@ def get_filters():
     while True:
         day = input("Please enter the day of the week to filter by:\n").lower().strip()
         if day not in week_days:
-            print("Invalid input; try again")
+            print("Bad input; try again")
         else:
             break
 
